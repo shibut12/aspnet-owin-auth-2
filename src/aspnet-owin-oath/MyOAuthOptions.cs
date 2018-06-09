@@ -12,7 +12,6 @@ namespace aspnet_owin_oath
             AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(60);
             AccessTokenFormat = new MyJwtFormat(60);
             Provider = new MyOauthProvider();
-
 #if DEBUG
             AllowInsecureHttp = true;
 #endif

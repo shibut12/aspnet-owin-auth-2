@@ -30,7 +30,7 @@ namespace aspnet_owin_oath
 
             var issuer = "localhost";
             var audience = "all";
-            var key = Convert.FromBase64String(Convert.ToBase64String(Encoding.UTF8.GetBytes("UHxNtYMRYwvfpO1dS5pWLKL0M2DgOj40EbN4SoBWgfc")));
+            var key = Convert.FromBase64String("NDI0NzQzZGItZDRlNS00YWNhLTgxYTctYTQyYmY5M2RmM2Iw");
             var now = DateTime.UtcNow;
             var expires = now.AddMinutes(_timeout);
 

@@ -1,4 +1,6 @@
-﻿using Owin;
+﻿using Microsoft.Owin.Security.Jwt;
+using Microsoft.Owin.Security.OAuth;
+using Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +16,7 @@ namespace aspnet_owin_oath
             HttpConfiguration httpConfiguration = new HttpConfiguration();
 
             appBuilder.UseOAuthAuthorizationServer(new MyOAuthOptions());
-
+            appBuilder.UseJwtBearerAuthentication(new MyJwtOptions());
 
             httpConfiguration.Routes.MapHttpRoute(
                 name: "DefaultApi",
