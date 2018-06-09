@@ -1,5 +1,4 @@
 ﻿using Microsoft.Owin.Security.Jwt;
-using System.IdentityModel.Tokens.Jwt;
 using System;
 
 namespace aspnet_owin_oath
