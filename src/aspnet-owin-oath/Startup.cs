@@ -12,6 +12,10 @@ namespace aspnet_owin_oath
         public void Configuration(IAppBuilder appBuilder)
         {
             HttpConfiguration httpConfiguration = new HttpConfiguration();
+
+            appBuilder.UseOAuthAuthorizationServer(new MyOAuthOptions());
+
+
             httpConfiguration.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
