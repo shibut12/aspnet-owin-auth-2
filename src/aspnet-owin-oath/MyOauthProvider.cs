@@ -12,11 +12,6 @@ namespace aspnet_owin_oath
     {
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            //var identity = new ClaimsIdentity("otc");
-            //var username = context.OwinContext.Get<string>("otc:username");
-            //identity.AddClaim(new Claim("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name", username));
-            //identity.AddClaim(new Claim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "user"));
-
             string userName = context.UserName;
             string passWord = context.Password;
 
